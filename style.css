@@ -1,0 +1,140 @@
+.f-bebas-neue {
+  font-family: "Bebas Neue" !important;
+}
+
+.f-manrope {
+  font-family: "Manrope" !important;
+}
+
+.f-playfair-display {
+  font-family: "Playfair Display" !important;
+}
+
+.map-embed {
+  aspect-ratio: 16/9;
+}
+
+.countdown-container {
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  /* Fuente estilo tatuaje */
+  margin: 2rem 0;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.countdown-item {
+  background: #000;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  min-width: 80px;
+}
+
+.countdown-item span {
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: block;
+  color: #880808;
+  /* Rojo sangre */
+}
+
+.countdown-item p {
+  margin: 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+
+.grid-4 {
+  /* display: grid; */
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.artist-img {
+  width: 100%;
+  object-fit: cover;
+  transition: all 300ms;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.artist-image-container {
+  aspect-ratio: 1/1 !important;
+  overflow: hidden;
+  /* border: solid 1px red !important; */
+}
+
+.item-container {
+  height: auto;
+  width: 180px;
+  aspect-ratio: 1/1 !important;
+  /* border: solid 1px red; */
+  margin-right: 1rem;
+}
+
+.owl-item {
+  width: fit-content !important;
+}
+
+#artists-section {
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.sponsor-img {
+  transition: all 300ms;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+#hero-section video {
+  height: 100vh;
+  filter: brightness(.2) grayscale(1) contrast(1);
+  place-self: center;
+}
+
+
+#hero-section {
+  overflow: hidden;
+}
+
+.owl-stage {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+
+}
+
+#loc-date {
+  display: flex;
+  gap: 1rem;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width:1000px) {
+  #artists-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width:600px) {
+  #artists-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #loc-date {
+    flex-direction: column-reverse;
+  }
+}
