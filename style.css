@@ -100,13 +100,12 @@
 #hero-section video {
   height: 100vh;
   filter: brightness(.2) grayscale(1) contrast(1);
-  place-self: center;
 }
 
 
-#hero-section {
+/* #hero-section {
   overflow: hidden;
-}
+} */
 
 .owl-stage {
   display: flex !important;
@@ -123,9 +122,29 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+ul li {
+  list-style: none;
+}
+ul span {
+  color: #880808;
+}
+
+.program-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
+}
+
+.program-container>div{
+  background-color: #000;
+}
 @media (max-width:1000px) {
   #artists-section {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .program-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -136,5 +155,9 @@
 
   #loc-date {
     flex-direction: column-reverse;
+  }
+
+  .program-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
